@@ -1,0 +1,28 @@
+
+.over
+{
+    width:300px;
+    padding:20px;
+    position: fixed;
+    top:calc(50% - 95px);
+    right:calc(50% - 170px);
+    z-index:11;
+    background-color: rgb(19, 100, 178);
+    border-radius: 3px;
+    h4{
+        font-size: 1.4rem;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+    button{
+        padding:9px 25px;
+        margin-top: 20px;
+        border: unset;
+        color:rgb(19, 100, 178);
+        font-size: 1rem;
+        &:hover{
+            cursor: pointer;
+            background-color:rgb(202, 202, 202) ;
+        }
+    }
+}

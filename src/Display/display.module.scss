@@ -1,0 +1,160 @@
+
+
+.display
+{
+    display: flex;
+    > *{
+        flex:1;
+    }
+}
+.hangMan
+{
+    position: relative;
+    height:330px;
+    >*{
+        position: absolute;
+        background-color: white;
+        border-radius: 3px;
+    }
+}
+.cylinder1
+{
+    width: 120px;
+    height:4px;
+    bottom: 0;
+    left:calc(50% - 60px);
+}
+.cylinder2
+{
+    width:4px;
+    height:230px;
+    bottom: 0;
+}
+.cylinder3
+{
+    height:4px;
+    width: 100px;
+    top:100px;  
+}
+.cylinder4
+{
+    width:4px;
+    height:40px;
+    left: calc(50% + 96px);
+    top:100px;
+}
+.hangManPart
+{
+    position:absolute;
+    width: 60px;
+    height:4px;
+    background-color: transparent;
+    right: calc(50% - 128px);
+    top: 138px;
+    >*{
+        position: absolute;
+        background-color: white;
+        border-radius: 3px;
+    }
+}
+.hangMan1
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    left: calc(50% - 20px);
+    &::before{
+        content: '';
+        position:absolute;
+        top:3px;
+        right:3px;
+        bottom:3px;
+        left:3px;
+        border-radius: 50%;
+        background-color: rgb(33, 52, 76);
+    }
+}
+.hangMan2
+{
+    width:4px;
+    height:60px;
+    top:40px;
+    left:calc(50% - 2px);
+}
+.hangMan3
+{
+    width: 35px;
+    height:4px;
+    transform: rotate(-45deg);
+    top:55px;
+    left:calc(50% - 6px)
+}
+.hangMan4
+{
+    width: 35px;
+    height:4px;
+    transform: rotate(45deg);
+    top:55px;
+    right:calc(50% - 6px)
+}
+.hangMan5
+{
+    width: 50px;
+    height:4px;
+    transform: rotate(50deg);
+    top:114px;
+    left:calc(50% - 10px)
+}
+.hangMan6
+{
+    width: 50px;
+    height:4px;
+    transform: rotate(-50deg);
+    top:114px;
+    right:calc(50% - 10px)
+}
+
+
+.wrong
+{
+    margin-top: 60px;
+}
+.wrongList
+{
+    margin: 10px 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    font-size: 1.4rem;
+    li{
+        padding:0 3px;
+    }
+}
+
+.listInput
+{
+    margin-top: 60px;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;  
+    li{
+        position: relative;
+        width: 16px;
+        height: 22px;
+        padding:0 3px 15px;
+        margin: 0 3px;
+        &::after{
+            content: '';
+            left:0;
+            right:0;
+            height: 4px;
+            position: absolute;
+            bottom: 0;
+            background-color:rgb(38, 92, 146);
+            border-radius:5px;
+        }
+    }
+}
